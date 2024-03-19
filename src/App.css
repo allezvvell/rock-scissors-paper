@@ -11,25 +11,33 @@
   align-items: center;
   height: 100vh;
 }
-.box-wrap .box {
-  margin: 10px;
+
+.box-wrap > div {
+  margin: 5px;
   width: 500px;
   height: 500px;
   text-align: center;
-  border: 3px solid black;
+  border: 4px solid black;
   border-radius: 10px;
 }
 
-.box-wrap .box .title {
+.box-wrap > div.win {
+  border-color: green;
+}
+.box-wrap > div.lose {
+  border-color: red;
+}
+
+.box-wrap > div .title {
   
 }
 
 
-.box-wrap .box .img-box img {
+.box-wrap > div .img-box img {
  width: 80%;
 }
 
-.box-wrap .box .result {
+.box-wrap > div .result {
 
 }
 

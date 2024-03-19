@@ -35,7 +35,6 @@ function App() {
     let computerChoice = randomChoice();
     setComputerSelect(choice[computerChoice]);
     setResult(judgement(choice[userChoice],choice[computerChoice]));
-
   }
   const judgement = (user,computer) => {
     if(user.name === computer.name){
@@ -57,7 +56,7 @@ function App() {
     <div className='wrapper'>
       <div className='box-wrap'>
         <Box title='You' item={userSelect} result={result}/>
-        <Box title='Computer' item={computerSelect} />
+        <Box title='Computer' item={computerSelect} result={result}/>
       </div>
       <div className='button-wrap'>
         <button className='scissors' onClick={() => play('scissors')}><FontAwesomeIcon icon={faHandScissors} /></button>
