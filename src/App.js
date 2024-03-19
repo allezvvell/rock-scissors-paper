@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import './App.css';
 import Box from './component/Box';
+import ResultBox from './component/ResultBox';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandBackFist } from "@fortawesome/free-regular-svg-icons";
 import { faHandScissors } from "@fortawesome/free-regular-svg-icons";
@@ -28,7 +29,7 @@ const choice = {
 function App() {
   const [userSelect, setUserSelect] = useState(null);
   const [computerSelect,setComputerSelect] = useState(null);
-  const [result,setResult] = useState(null);
+  const [result,setResult] = useState('');
 
   const play = (userChoice) => {
     setUserSelect(choice[userChoice]);
@@ -63,6 +64,7 @@ function App() {
         <button className='rock' onClick={() => play('rock')}><FontAwesomeIcon icon={faHandBackFist} /></button>
         <button className='paper' onClick={() => play('paper')}><FontAwesomeIcon icon={faHand} /></button>
       </div>
+      <ResultBox result={result}/>
     </div>
   )
 }

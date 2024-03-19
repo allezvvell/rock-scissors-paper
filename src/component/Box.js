@@ -2,7 +2,7 @@ import React from 'react';
 
 const Box = (props) => {
   let result = props.result;
-  if(props.title === 'Computer'){
+  if(props.title === 'Computer' && props.result !== 'tie' && props.result !== ''){
     if(result === 'win'){
       result = 'lose'
     }else if(result === 'lose'){

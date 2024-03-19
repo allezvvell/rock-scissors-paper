@@ -28,24 +28,17 @@
   border-color: red;
 }
 
-.box-wrap > div .title {
-  
-}
-
 
 .box-wrap > div .img-box img {
  width: 80%;
 }
 
-.box-wrap > div .result {
-
-}
 
 .button-wrap {
   position: absolute;
   left: 50%;
-  top: 30px;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%,-400px);
 }
 
 .button-wrap button {
@@ -65,12 +58,9 @@
   color: #fff;
 }
 
-.button-wrap button.rock {
-
-}
-.button-wrap button.scissors {
-
-}
-.button-wrap button.paper {
-
+.result-box {
+  position:  absolute;
+  left: 50%;
+  top : 50%;
+  transform: translate(-50%,-300px);
 }
