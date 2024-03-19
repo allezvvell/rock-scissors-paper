@@ -12,10 +12,10 @@ const Box = (props) => {
   return (
     <div className={result}>
        <h1 className='title'>{props.title}</h1>
-       <span className='img-box'><img src={props.item && props.item.img} alt='가위바위보이미지'/></span>
+       <span className='img-box'><img src={props.item && props.item.img} alt='�??��바위보이미�??'/></span>
        <h2 className='result'>{result}</h2>
     </div>
   )
 }
 
-export default Box
+export default Box  
