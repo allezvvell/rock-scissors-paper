@@ -122,12 +122,9 @@ function App() {
         <button className='restart-btn' onClick={() => {window.location.reload()}}>Restart</button>
         <button className='share-btn' onClick={() => {shareUrl()}}>Share</button>
       </div>
+      <div className='cover'>반응형 작업중 입니다!</div>
     </div>
   )
 }
 
 export default App;
-
-// 1. 처음 이미지 보이기
-// 2. score 판
-// 3. 게임 시작하기 버튼을 클릭해야 가위바위보 버튼이 보임

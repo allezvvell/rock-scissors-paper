@@ -230,3 +230,20 @@ body {
   cursor: pointer;
   box-shadow: none;
 }
+
+.cover {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 1220px) {
+  .cover {display: block;}
+}
