@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Box = (props) => {
+  
   let result = props.result;
   if(props.title === 'Computer' && props.result !== 'tie' && props.result !== ''){
     if(result === 'win'){
@@ -11,9 +12,9 @@ const Box = (props) => {
   }
   return (
     <div className={result}>
-       <h1 className='title'>{props.title}</h1>
-       <span className='img-box'><img src={props.item && props.item.img} alt='°¡À§¹ÙÀ§º¸ ÀÌ¹ÌÁö'/></span>
-       <h2 className='result'>{result}</h2>
+       <h2 className='title'>{props.title}</h2>
+       <span className='img-box'>{props.item && <img src={props.item.img} alt='ê°€ìœ„ë°”ìœ„ë³´ ì´ë¯¸ì§€'/>}</span>
+       <h3 className='result'>{result}</h3>
     </div>
   )
 }
