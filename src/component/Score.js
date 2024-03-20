@@ -1,6 +1,3 @@
-import React, { useEffect } from 'react';
-
-
 const Score = (props) => { 
   return (
     <div>
