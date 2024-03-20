@@ -11,7 +11,7 @@ const Thumb = (props) => {
   }
   return (
     <div className={`${props.title} ${result}`}>
-      <img src='./img/thumb.png'/>
+      <img src='./img/thumb.png' alt='엄지척 이미지'/>
     </div>
   )
 }
