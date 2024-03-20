@@ -197,20 +197,23 @@ body {
   transform: translateY(-50%);
 }
 .thumbs-wrap div.you {
-  left: -160px;
+  left: -250px;
 } 
 .thumbs-wrap  div.computer {
-  right: -160px;
+  right: -250px;
 } 
 .thumbs-wrap div.computer img {
   transform: rotateY(180deg);
 }
 
 .thumbs-wrap > div.you.win {
-  transform: translateX(100%);
+  transform: translateX(100%) translateY(-50%);
 }
 .thumbs-wrap > div.computer.win {
-  transform: translateX(-100%);
+  transform: translateX(-100%) translateY(-50%);
+}
+.thumbs-wrap img {
+  width: 250px
 }
 .header-btn-wrap {
   position: absolute;

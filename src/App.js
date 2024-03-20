@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandBackFist } from "@fortawesome/free-regular-svg-icons";
 import { faHandScissors } from "@fortawesome/free-regular-svg-icons";
 import { faHand } from "@fortawesome/free-regular-svg-icons";
+import { faShareFromSquare } from "@fortawesome/free-regular-svg-icons";
+
 
 
 const ROCK = 'rock';
@@ -120,7 +122,7 @@ function App() {
       </div>
       <div className='header-btn-wrap'>
         <button className='restart-btn' onClick={() => {window.location.reload()}}>Restart</button>
-        <button className='share-btn' onClick={() => {shareUrl()}}>Share</button>
+        <button className='share-btn' onClick={() => {shareUrl()}}><FontAwesomeIcon icon={faShareFromSquare} />Share</button>
       </div>
       <div className='cover'>반응형 작업중 입니다!</div>
     </div>
