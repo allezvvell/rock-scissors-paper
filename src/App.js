@@ -83,6 +83,16 @@ function App() {
     document.querySelector('.score-wrap').classList.remove('hide');
   }
 
+  const shareUrl = () => {
+    if (navigator.share) {
+        navigator.share({
+            title: '가위바위보 게임',
+            url: 'https://rock-scissors-papper-allezvvell.netlify.app',
+        });
+    }else{
+        alert("공유하기가 지원되지 않는 환경 입니다.")
+    }
+  }
   return (
     <div className='wrapper'>
       <div className='score-wrap hide'>
@@ -107,6 +117,10 @@ function App() {
       <div className='thumbs-wrap'>
         <Thumb title='you' result={result}/>
         <Thumb title='computer' result={result}/>
+      </div>
+      <div className='header-btn-wrap'>
+        <button className='restart-btn' onClick={() => {window.location.reload()}}>Restart</button>
+        <button className='share-btn' onClick={() => {shareUrl()}}>Share</button>
       </div>
     </div>
   )

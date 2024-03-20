@@ -212,3 +212,21 @@ body {
 .thumbs-wrap > div.computer.win {
   transform: translateX(-100%);
 }
+.header-btn-wrap {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header-btn-wrap button {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 5px;
+  font-size: 12px;
+  color: #fff;
+  border: 1px solid #64748B;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: none;
+}
