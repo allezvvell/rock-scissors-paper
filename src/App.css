@@ -21,11 +21,7 @@ body {
   text-align: center;
   color: #8298b6;
 }
-@keyframes blink{
-  0% {opacity: 1;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
-}
+
 .score-wrap .game-title {
   display: none;
 }
@@ -38,7 +34,6 @@ body {
   width: 1000px;
   font-size: 40px;
   font-weight: bold;
-  animation: blink 1s infinite linear; 
 }
 .score-wrap .score-container {
   display: flex;
@@ -126,6 +121,13 @@ body {
   bottom: 50%;
   transform: translate(-50%,380px);
 }
+
+@keyframes blink{
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .button-wrap .start-btn {
   position: absolute;
   left: 50%;
@@ -140,9 +142,10 @@ body {
   cursor: pointer;
   background: transparent;
   transition: box-shadow 0.3s ease-in-out;
+  animation: blink 1s infinite linear;
 }
 .start-btn:hover {
-  box-shadow: inset -4em 0 0 0 #2d3d61, inset 4em 0 0 0 #2d3d61;
+  box-shadow: inset -4em 0 0 0 #2d3d61, inset 4em 0 0 0 #2d3d61;  
 }
 
 .button-wrap .start-btn.hide {
